@@ -99,8 +99,10 @@ class XGBoostGeneralSuite extends SharedSparkContext with Utils {
       "objective" -> "binary:logistic").toMap
     val xgBoostModel = XGBoost.trainWithRDD(trainingRDD, paramMap, round = 5,
       nWorkers = numWorkers, useExternalMemory = true)
+    val featureScore = xgBoostModel.getFeatureScore()
     assert(eval.eval(xgBoostModel.booster.predict(testSetDMatrix, outPutMargin = true),
       testSetDMatrix) < 0.1)
+    assert(!featureScore.isEmpty)
     // clean
     cleanExternalCache("XGBoostSuite")
   }
@@ -388,6 +390,8 @@ class XGBoostGeneralSuite extends SharedSparkContext with Utils {
     val xgBoostModel = XGBoost.trainWithRDD(trainingRDD, paramMap, 5, nWorkers = 2)
     val predRDD = xgBoostModel.predict(testRDD)
     val predResult1: Array[Array[Float]] = predRDD.collect()(0)
+    val featureScore = xgBoostModel.getFeatureScore()
+    assert(!featureScore.isEmpty)
     assert(testRDD.count() === predResult1.length)
   }
 }

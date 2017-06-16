@@ -17,12 +17,10 @@
 package ml.dmlc.xgboost4j.scala.spark
 
 import scala.collection.JavaConverters._
-
-import ml.dmlc.xgboost4j.java.{Rabit, DMatrix => JDMatrix}
+import ml.dmlc.xgboost4j.java.{Rabit, XGBoostError, DMatrix => JDMatrix}
 import ml.dmlc.xgboost4j.scala.spark.params.{BoosterParams, DefaultXGBoostParamsWriter}
 import ml.dmlc.xgboost4j.scala.{Booster, DMatrix, EvalTrait}
 import org.apache.hadoop.fs.{FSDataOutputStream, Path}
-
 import org.apache.spark.ml.PredictionModel
 import org.apache.spark.ml.feature.{LabeledPoint => MLLabeledPoint}
 import org.apache.spark.ml.linalg.{DenseVector => MLDenseVector, Vector => MLVector}
@@ -33,6 +31,8 @@ import org.apache.spark.sql._
 import org.apache.spark.sql.types.{ArrayType, FloatType}
 import org.apache.spark.{SparkContext, TaskContext}
 import org.json4s.DefaultFormats
+
+import scala.collection.mutable
 
 /**
  * the base class of [[XGBoostClassificationModel]] and [[XGBoostRegressionModel]]
@@ -253,6 +253,16 @@ abstract class XGBoostModel(protected var _booster: Booster)
           Iterator[Row]()
         }
     }
+  }
+
+  /**
+    * Get importance of each feature
+    *
+    * @return featureMap  key: feature index, value: feature importance score
+    */
+  @throws(classOf[XGBoostError])
+  def getFeatureScore(featureMap: String = null): mutable.Map[String, Integer] = {
+    booster.getFeatureScore(featureMap)
   }
 
   /**
