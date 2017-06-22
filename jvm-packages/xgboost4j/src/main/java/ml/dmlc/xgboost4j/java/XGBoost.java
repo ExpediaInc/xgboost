@@ -134,9 +134,9 @@ public class XGBoost {
             }
           }
         }
-        if (Rabit.getRank() == 0) {
-          Rabit.trackerPrint(evalInfo + '\n');
-        }
+        //if (Rabit.getRank() == 0) {
+        Rabit.trackerPrint(evalInfo + '\n');
+        //}
       }
       booster.saveRabitCheckpoint();
       version += 1;
