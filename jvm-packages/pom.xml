@@ -22,6 +22,8 @@
         <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
         <maven-jar-plugin.version>2.2</maven-jar-plugin.version>
         <maven-release-plugin.version>2.5.2</maven-release-plugin.version>
+        <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+
 
         <!-- Following properties are for release. -->
         <buildType>sandbox</buildType>
@@ -99,6 +101,11 @@
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${maven-deploy-plugin.version}</version>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-scm-plugin</artifactId>
