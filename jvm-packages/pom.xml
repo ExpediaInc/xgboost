@@ -35,10 +35,10 @@
         <mvn.repository.expedia-releases.url>http://nexuslab.alm/nexus/content/groups/public</mvn.repository.expedia-releases.url>
     </properties>
     <scm>
-        <developerConnection>scm:git:https://github.com/ExpediaInc/xgboost.git</developerConnection>
-        <connection>scm:git:https://github.com/ExpediaInc/xgboost.git</connection>
+        <developerConnection>scm:git:git@github.com:ExpediaInc/xgboost.git</developerConnection>
+        <connection>scm:git:git@github.com:ExpediaInc/xgboost.git</connection>
         <tag>HEAD</tag>
-        <url>scm:git:https://github.com/ExpediaInc/xgboost.git</url>
+        <url>scm:git:git@github.com:ExpediaInc/xgboost.git</url>
     </scm>
     <repositories>
         <repository>
