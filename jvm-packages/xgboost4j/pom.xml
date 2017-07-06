@@ -42,6 +42,22 @@
                         <groupId>org.codehaus.mojo</groupId>
                         <version>1.6.0</version>
                         <executions>
+                            <execution>
+                                <id>git submodule update</id>
+                                <phase>initialize</phase>
+                                <configuration>
+                                    <executable>git</executable>
+                                    <arguments>
+                                        <argument>submodule</argument>
+                                        <argument>update</argument>
+                                        <argument>--init</argument>
+                                        <argument>--recursive</argument>
+                                    </arguments>
+                                </configuration>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                            </execution>
                             <execution><!-- Run our version calculation script -->
                                 <id>native</id>
                                 <phase>generate-sources</phase>
