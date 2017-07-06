@@ -4,10 +4,10 @@
     <parent>
         <groupId>com.expedia</groupId>
         <artifactId>xgboost-jvm</artifactId>
-        <version>0.7.3-SNAPSHOT</version>
+        <version>0.7.3</version>
     </parent>
     <artifactId>xgboost4j</artifactId>
-    <version>0.7.3-SNAPSHOT</version>
+    <version>0.7.3</version>
     <packaging>jar</packaging>
     <profiles>
         <profile>

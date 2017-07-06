@@ -4,10 +4,10 @@
     <parent>
         <groupId>com.expedia</groupId>
         <artifactId>xgboost-jvm</artifactId>
-        <version>0.7.3-SNAPSHOT</version>
+        <version>0.7.3</version>
     </parent>
     <artifactId>xgboost4j-example</artifactId>
-    <version>0.7.3-SNAPSHOT</version>
+    <version>0.7.3</version>
     <packaging>jar</packaging>
     <build>
         <plugins>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.expedia</groupId>
             <artifactId>xgboost4j-spark</artifactId>
-            <version>0.7.3-SNAPSHOT</version>
+            <version>0.7.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
@@ -35,7 +35,7 @@
         <dependency>
             <groupId>com.expedia</groupId>
             <artifactId>xgboost4j-flink</artifactId>
-            <version>0.7.3-SNAPSHOT</version>
+            <version>0.7.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
