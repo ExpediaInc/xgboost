@@ -20,7 +20,7 @@ fi
 
 ##test
 ls
-ls ..
+
 ls ../dmlc-core
 
 ##
