@@ -18,6 +18,13 @@ if [ $(uname) == "Darwin" ]; then
   dis_omp=1
 fi
 
+##test
+ls
+ls ..
+ls ../dmlc-core
+
+##
+
 cd ..
 make jvm no_omp=${dis_omp}
 cd jvm-packages
