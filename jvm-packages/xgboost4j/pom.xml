@@ -48,7 +48,7 @@
                                     <goal>exec</goal>
                                 </goals>
                                 <configuration>
-                                    <executable>create_jni.sh</executable>
+                                    <executable>jvm-packages/create_jni.sh</executable>
                                 </configuration>
                             </execution>
                         </executions>

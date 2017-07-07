@@ -21,7 +21,7 @@ fi
 ##test
 ls
 
-ls ../dmlc-core
+ls ../dmlc-core/make
 
 ##
 
