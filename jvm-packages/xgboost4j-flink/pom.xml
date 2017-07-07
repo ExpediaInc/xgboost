@@ -5,6 +5,7 @@
         <groupId>com.expedia</groupId>
         <artifactId>xgboost-jvm</artifactId>
         <version>0.10.4-SNAPSHOT</version>
+        <relativePath>../../</relativePath>
     </parent>
     <artifactId>xgboost4j-flink</artifactId>
     <version>0.10.4-SNAPSHOT</version>
