@@ -47,10 +47,10 @@
         </repository>
     </repositories>
     <modules>
-        <module>xgboost4j</module>
-        <module>xgboost4j-example</module>
-        <module>xgboost4j-spark</module>
-        <module>xgboost4j-flink</module>
+        <module>jvm-packages/xgboost4j</module>
+        <module>jvm-packages/xgboost4j-example</module>
+        <module>jvm-packages/xgboost4j-spark</module>
+        <module>jvm-packages/xgboost4j-flink</module>
     </modules>
     <profiles>
         <profile>
