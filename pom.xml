@@ -47,9 +47,8 @@
         </repository>
     </repositories>
     <modules>
-
+        <module>jvm-packages/xgboost4j</module>
         <module>jvm-packages/xgboost4j-spark</module>
-
     </modules>
     <profiles>
         <profile>
