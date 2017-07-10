@@ -33,6 +33,7 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-assembly-plugin</artifactId>
                         <configuration>
+                            <attach>false</attach>
                             <skipAssembly>false</skipAssembly>
                         </configuration>
                     </plugin>
