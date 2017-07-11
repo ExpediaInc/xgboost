@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.expedia</groupId>
         <artifactId>xgboost-jvm</artifactId>
-        <version>0.11.7-SNAPSHOT</version>
+        <version>0.11.8-SNAPSHOT</version>
         <relativePath>../../</relativePath>
     </parent>
     <artifactId>xgboost4j-spark</artifactId>
