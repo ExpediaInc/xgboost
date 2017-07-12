@@ -18,6 +18,7 @@ if [ $(uname) == "Darwin" ]; then
   dis_omp=1
 fi
 
+
 cd ..
 make jvm no_omp=${dis_omp}
 cd jvm-packages
