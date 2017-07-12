@@ -307,7 +307,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
-                    <attach>false</attach>
+                    <!-- <attach>false</attach> -->
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
