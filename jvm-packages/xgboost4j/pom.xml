@@ -46,6 +46,9 @@
                         <version>1.6.0</version>
                         <executions>
                             <execution><!-- Run our version calculation script -->
+                                <configuration>
+                                    <classifier>Not-Windows</classifier>
+                                  </configuration>
                                 <id>native</id>
                                 <phase>generate-sources</phase>
                                 <goals>
