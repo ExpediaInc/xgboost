@@ -29,6 +29,7 @@
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <version>2.10.3</version>
                         <configuration>
+                            <classifier>Not-Windows</classifier>
                             <show>protected</show>
                             <nohelp>true</nohelp>
                         </configuration>
@@ -46,15 +47,13 @@
                         <version>1.6.0</version>
                         <executions>
                             <execution><!-- Run our version calculation script -->
-                                <configuration>
-                                    <classifier>Not-Windows</classifier>
-                                  </configuration>
                                 <id>native</id>
                                 <phase>generate-sources</phase>
                                 <goals>
                                     <goal>exec</goal>
                                 </goals>
                                 <configuration>
+                                    <classifier>Not-Windows</classifier>
                                     <executable>jvm-packages/create_jni.sh</executable>
                                 </configuration>
                             </execution>
