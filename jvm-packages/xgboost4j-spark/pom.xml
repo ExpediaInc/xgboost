@@ -21,7 +21,7 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>com.expedia</groupId>
+            <groupId>com.expedia.xgboost4j</groupId>
             <artifactId>xgboost4j</artifactId>
             <version>0.7.1-SNAPSHOT</version>
         </dependency>
