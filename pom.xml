@@ -115,6 +115,7 @@
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven-jar-plugin.version}</version>
                     <configuration>
+                       <finalName>${project.artifactId}-client-${project.version}</finalName>
                         <useDefaultManifestFile>true</useDefaultManifestFile>
 
                         <archive>
