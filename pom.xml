@@ -7,6 +7,7 @@
     <version>0.11.15-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
+        <finalname></finalname>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -148,6 +149,7 @@
                         <useReleaseProfile>false</useReleaseProfile>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix>[maven-release-plugin] :</scmCommentPrefix>
+                        <tagNameFormat>@{project.artifactId}-@{project.version}-Test</tagNameFormat>
                     </configuration>
                 </plugin>
             </plugins>
