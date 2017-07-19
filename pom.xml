@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.expedia.xgboost</groupId>
-    <artifactId>xgboost-jvm-${os.detected.classifier}</artifactId>
+    <artifactId>xgboost-jvm-${os.detected}</artifactId>
     <version>0.7.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
