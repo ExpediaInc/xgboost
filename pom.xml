@@ -115,7 +115,7 @@
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven-jar-plugin.version}</version>
                     <configuration>
-                       <finalName>${project.artifactId}-${platform}-${project.version}</finalName>
+                       <finalName>${project.artifactId}-${project.version}</finalName>
                         <useDefaultManifestFile>true</useDefaultManifestFile>
 
                         <archive>
@@ -150,7 +150,7 @@
                         <useReleaseProfile>false</useReleaseProfile>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix>[maven-release-plugin] :</scmCommentPrefix>
-                        <tagNameFormat>@{project.artifactId}-@{project.version}-${platform}</tagNameFormat>
+                        <tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
                     </configuration>
                 </plugin>
             </plugins>
