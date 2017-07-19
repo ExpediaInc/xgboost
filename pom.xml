@@ -115,9 +115,9 @@
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven-jar-plugin.version}</version>
                     <configuration>
-                        <classifier>qa</classifier>
+                        <classifier>${platform}</classifier>
 
-                       <finalName>${project.artifactId}-Linux-${project.version}</finalName>
+                       <finalName>${project.artifactId}-${project.version}-${platform}</finalName>
                         <useDefaultManifestFile>true</useDefaultManifestFile>
 
                         <archive>
@@ -313,10 +313,9 @@
                 <version>2.6</version>
                 <configuration>
                     <!-- <attach>false</attach> -->
-                    <classifier>qa</classifier>
-
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
+                        <descriptorRef>${platform}</descriptorRef>
                     </descriptorRefs>
                     <skipAssembly>true</skipAssembly>
                 </configuration>
