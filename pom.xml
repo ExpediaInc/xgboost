@@ -313,6 +313,8 @@
                 <version>2.6</version>
                 <configuration>
                     <!-- <attach>false</attach> -->
+                    <classifier>qa</classifier>
+
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
