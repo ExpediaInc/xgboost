@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.expedia.xgboost</groupId>
-    <artifactId>xgboost-jvm-${project.modelVersion}</artifactId>
+    <artifactId>xgboost-jvm-${platform}</artifactId>
     <version>0.7.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
