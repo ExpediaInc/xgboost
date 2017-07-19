@@ -22,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>com.expedia.xgboost4j</groupId>
-            <artifactId>xgboost4j</artifactId>
+            <artifactId>xgboost4j-${platform}</artifactId>
             <version>0.7.1-SNAPSHOT</version>
         </dependency>
         <dependency>
