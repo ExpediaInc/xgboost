@@ -4,10 +4,10 @@
 
     <groupId>com.expedia</groupId>
     <artifactId>xgboost-jvm</artifactId>
-    <version>0.11.15-SNAPSHOT</version>
+    <version>0.11.15</version>
     <packaging>pom</packaging>
     <properties>
-        <finalname></finalname>
+        <finalname />
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -37,7 +37,7 @@
     <scm>
         <developerConnection>scm:git:git@github.com:ExpediaInc/xgboost.git</developerConnection>
         <connection>scm:git:git@github.com:ExpediaInc/xgboost.git</connection>
-        <tag>HEAD</tag>
+        <tag>v0.11.15</tag>
         <url>scm:git:git@github.com:ExpediaInc/xgboost.git</url>
     </scm>
     <repositories>
