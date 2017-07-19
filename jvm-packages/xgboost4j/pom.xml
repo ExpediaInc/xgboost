@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.expedia.xgboost</groupId>
-        <artifactId>xgboost-jvm-${os.detected.classifier}</artifactId>
+        <artifactId>xgboost-jvm-${platform}</artifactId>
         <version>0.7.1-SNAPSHOT</version>
         <relativePath>../../</relativePath>
     </parent>
-    <artifactId>xgboost4j-${os.detected.classifier}</artifactId>
+    <artifactId>xgboost4j-${platform}</artifactId>
     <version>0.7.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <profiles>
