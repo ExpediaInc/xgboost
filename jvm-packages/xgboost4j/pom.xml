@@ -39,6 +39,7 @@
                         <artifactId>maven-assembly-plugin</artifactId>
                         <configuration>
                             <skipAssembly>false</skipAssembly>
+                            <finalName>${finalname}</finalName>
                         </configuration>
                     </plugin>
                     <plugin>
