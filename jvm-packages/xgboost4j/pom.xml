@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.expedia.xgboost</groupId>
         <artifactId>xgboost-jvm-${platform}</artifactId>
-        <version>0.11.15-SNAPSHOT</version>
+        <version>0.7.1-SNAPSHOT</version>
         <relativePath>../../</relativePath>
     </parent>
     <artifactId>xgboost4j-${platform}</artifactId>
-    <version>0.11.15-SNAPSHOT</version>
+    <version>0.7.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <profiles>
         <profile>
