@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.expedia</groupId>
-    <artifactId>xgboost-jvm</artifactId>
+    <groupId>com.expedia.xgboost</groupId>
+    <artifactId>xgboost-jvm-${platform}</artifactId>
     <version>0.11.15-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
@@ -115,9 +115,7 @@
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven-jar-plugin.version}</version>
                     <configuration>
-                        <classifier>${platform}</classifier>
-
-                       <finalName>${project.artifactId}-${project.version}-${platform}</finalName>
+                       <finalName>${project.artifactId}-${platform}-${project.version}</finalName>
                         <useDefaultManifestFile>true</useDefaultManifestFile>
 
                         <archive>
@@ -315,7 +313,6 @@
                     <!-- <attach>false</attach> -->
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
-                        <descriptorRef>${platform}</descriptorRef>
                     </descriptorRefs>
                     <skipAssembly>true</skipAssembly>
                 </configuration>
