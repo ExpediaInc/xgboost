@@ -5,6 +5,7 @@
     <artifactId>xgboost-jvm</artifactId>
     <version>0.7.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <platform>${platform}</platform>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
