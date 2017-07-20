@@ -20,7 +20,7 @@
         <maven-jar-plugin.version>2.2</maven-jar-plugin.version>
         <maven-release-plugin.version>2.5.2</maven-release-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
-        <platform>test</platform>
+        <!-- <platform>test</platform> -->
 
         <!-- Following properties are for release. -->
         <buildType>sandbox</buildType>
@@ -115,7 +115,7 @@
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven-jar-plugin.version}</version>
                     <configuration>
-                       <finalName>${project.artifactId}-${project.version}</finalName>
+                       <finalName>${project.artifactId}-${project.version}-${platform}</finalName>
                         <useDefaultManifestFile>true</useDefaultManifestFile>
 
                         <archive>
