@@ -5,7 +5,7 @@
     <artifactId>xgboost-jvm</artifactId>
     <version>0.7.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-
+    <classifier>${platform}</classifier>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -317,6 +317,7 @@
                     <skipAssembly>true</skipAssembly>
                     <appendAssemblyId>false</appendAssemblyId>
                     <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${platform}</finalName>
+                    
                 </configuration>
                 <executions>
                     <execution>
