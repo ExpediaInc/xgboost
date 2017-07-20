@@ -23,9 +23,9 @@
     <dependencies>
         <dependency>
             <groupId>com.expedia.xgboost4j</groupId>
-            <artifactId>xgboost4j</artifactId>
+            <artifactId>xgboost4j-${platform}</artifactId>
             <version>0.7.1-SNAPSHOT</version>
-            <classifier>${platform}</classifier>
+            <!-- <classifier>${platform}</classifier> -->
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
