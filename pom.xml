@@ -309,7 +309,7 @@
                 <version>2.6</version>
                 <configuration>
                     <!-- <attach>false</attach> -->
-                    <finalName>${platform}</finalName>
+                    <!-- <finalName>${platform}</finalName> -->
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
