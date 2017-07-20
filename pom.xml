@@ -149,7 +149,7 @@
                         <useReleaseProfile>false</useReleaseProfile>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix>[maven-release-plugin] :</scmCommentPrefix>
-                        <tagNameFormat>@{project.artifactId}-@{project.version}-@{platform}</tagNameFormat>
+                        <tagNameFormat>@{project.artifactId}-@{project.version}-${platform}</tagNameFormat>
                     </configuration>
                 </plugin>
             </plugins>
