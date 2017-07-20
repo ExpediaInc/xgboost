@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.expedia.xgboost4j</groupId>
-        <artifactId>xgboost-jvm-${platform}</artifactId>
+        <artifactId>xgboost-jvm</artifactId>
         <version>0.7.1-SNAPSHOT</version>
         <relativePath>../../</relativePath>
     </parent>
-    <artifactId>xgboost4j-spark-${platform}</artifactId>
+    <artifactId>xgboost4j-spark</artifactId>
     <build>
         <plugins>
             <plugin>
@@ -22,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>com.expedia.xgboost4j</groupId>
-            <artifactId>xgboost4j-${platform}</artifactId>
+            <artifactId>xgboost4j</artifactId>
             <version>0.7.1-SNAPSHOT</version>
         </dependency>
         <dependency>
