@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.expedia.xgboost4j</groupId>
     <artifactId>xgboost-jvm</artifactId>
-    <version>0.7.1-SNAPSHOT</version>
+    <version>0.7.1</version>
     <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,7 +35,7 @@
     <scm>
         <developerConnection>scm:git:git@github.com:ExpediaInc/xgboost.git</developerConnection>
         <connection>scm:git:git@github.com:ExpediaInc/xgboost.git</connection>
-        <tag>HEAD</tag>
+        <tag>xgboost-jvm-0.7.1-linux</tag>
         <url>scm:git:git@github.com:ExpediaInc/xgboost.git</url>
     </scm>
     <repositories>
