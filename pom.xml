@@ -5,7 +5,6 @@
     <artifactId>xgboost-jvm</artifactId>
     <version>0.7.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <classifier>${platform}</classifier>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -30,6 +29,7 @@
         <changeNumber>local</changeNumber>
         <depotInfo>none</depotInfo>
         <buildTime>${maven.build.timestamp}</buildTime>
+        <classifier>${platform}</classifier>
 
         <mvn.distribution.repository.expedia-releases.url>http://nexuslab.alm/nexus/content/repositories/releases/</mvn.distribution.repository.expedia-releases.url>
         <mvn.repository.expedia-releases.url>http://nexuslab.alm/nexus/content/groups/public</mvn.repository.expedia-releases.url>
@@ -317,7 +317,7 @@
                     <skipAssembly>true</skipAssembly>
                     <appendAssemblyId>false</appendAssemblyId>
                     <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${platform}</finalName>
-                    
+
                 </configuration>
                 <executions>
                     <execution>
