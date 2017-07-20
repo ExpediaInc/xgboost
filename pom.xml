@@ -115,7 +115,7 @@
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven-jar-plugin.version}</version>
                     <configuration>
-                       <!-- <finalName>${project.artifactId}-${project.version}-${platform}</finalName> -->
+                       <finalName>${project.artifactId}-${project.version}-${platform}</finalName>
                         <useDefaultManifestFile>true</useDefaultManifestFile>
 
                         <archive>
@@ -316,7 +316,7 @@
                     </descriptorRefs>
                     <skipAssembly>true</skipAssembly>
                     <appendAssemblyId>false</appendAssemblyId>
-<!--                     <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${platform}</finalName> -->
+                    <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${platform}</finalName>
                 </configuration>
                 <executions>
                     <execution>
