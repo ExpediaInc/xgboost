@@ -147,7 +147,7 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>${maven-release-plugin.version}</version>
                     <configuration>
-                        <arguments>-Dplatform=test</arguments> 
+                        <arguments>-Dplatform=${platform}</arguments> 
                         <useReleaseProfile>false</useReleaseProfile>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix>[maven-release-plugin] :</scmCommentPrefix>
