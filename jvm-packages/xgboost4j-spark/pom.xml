@@ -15,7 +15,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
                     <!-- <finalName>${platform}</finalName> -->
-                    <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${project.properties.platform}</finalName>
+                    <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${platform}</finalName>
                     <skipAssembly>false</skipAssembly>
                 </configuration>
             </plugin>
