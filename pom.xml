@@ -309,12 +309,10 @@
                 <version>2.6</version>
                 <configuration>
                     <!-- <attach>false</attach> -->
-                    <!-- <finalName>${platform}</finalName> -->
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                     <skipAssembly>true</skipAssembly>
-                    
                     <appendAssemblyId>false</appendAssemblyId>
                     <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${platform}</finalName>
                 </configuration>
