@@ -314,7 +314,7 @@
                     </descriptorRefs>
                     <skipAssembly>true</skipAssembly>
                     <appendAssemblyId>false</appendAssemblyId>
-                    <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${platform}</finalName>
+<!--                     <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${platform}</finalName> -->
                 </configuration>
                 <executions>
                     <execution>
