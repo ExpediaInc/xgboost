@@ -35,7 +35,7 @@
     <scm>
         <developerConnection>scm:git:git@github.com:ExpediaInc/xgboost.git</developerConnection>
         <connection>scm:git:git@github.com:ExpediaInc/xgboost.git</connection>
-        <tag>xgboost-jvm-0.7.1-@{platform}</tag>
+        <tag>${artifactId}-${version}-${platform}</tag>
         <url>scm:git:git@github.com:ExpediaInc/xgboost.git</url>
     </scm>
     <repositories>
