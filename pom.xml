@@ -20,7 +20,6 @@
         <maven-jar-plugin.version>2.2</maven-jar-plugin.version>
         <maven-release-plugin.version>2.5.2</maven-release-plugin.version>
         <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
-        <!-- <platform>test</platform> -->
 
         <!-- Following properties are for release. -->
         <buildType>sandbox</buildType>
@@ -29,7 +28,6 @@
         <changeNumber>local</changeNumber>
         <depotInfo>none</depotInfo>
         <buildTime>${maven.build.timestamp}</buildTime>
-        <!-- <classifier>${platform}</classifier> -->
 
         <mvn.distribution.repository.expedia-releases.url>http://nexuslab.alm/nexus/content/repositories/releases/</mvn.distribution.repository.expedia-releases.url>
         <mvn.repository.expedia-releases.url>http://nexuslab.alm/nexus/content/groups/public</mvn.repository.expedia-releases.url>
@@ -151,7 +149,7 @@
                         <useReleaseProfile>false</useReleaseProfile>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix>[maven-release-plugin] :</scmCommentPrefix>
-                        <tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
+                        <tagNameFormat>@{project.artifactId}-@{project.version}-@{platform}</tagNameFormat>
                     </configuration>
                 </plugin>
             </plugins>
