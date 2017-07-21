@@ -10,17 +10,6 @@
         <relativePath>../../</relativePath>
     </parent>
     <artifactId>xgboost4j-spark</artifactId>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <skipAssembly>false</skipAssembly>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
     <dependencies>
         <dependency>
             <groupId>com.expedia.xgboost4j</groupId>

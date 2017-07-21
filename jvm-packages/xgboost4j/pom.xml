@@ -36,13 +36,6 @@
                         </configuration>
                     </plugin>
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-assembly-plugin</artifactId>
-                        <configuration>
-                            <skipAssembly>false</skipAssembly>
-                        </configuration>
-                    </plugin>
-                    <plugin>
                         <artifactId>exec-maven-plugin</artifactId>
                         <groupId>org.codehaus.mojo</groupId>
                         <version>1.6.0</version>
@@ -82,13 +75,6 @@
                         <configuration>
                             <show>protected</show>
                             <nohelp>true</nohelp>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-assembly-plugin</artifactId>
-                        <configuration>
-                            <skipAssembly>false</skipAssembly>
                         </configuration>
                     </plugin>
                     <plugin>

@@ -116,7 +116,6 @@
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven-jar-plugin.version}</version>
                     <configuration>
-                        <finalName>${project.artifactId}-${project.version}-${platform}</finalName>
                         <useDefaultManifestFile>true</useDefaultManifestFile>
 
                         <archive>
@@ -150,8 +149,7 @@
                     <configuration>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix>[maven-release-plugin] :</scmCommentPrefix>
-                        <tagNameFormat>@{project.artifactId}-@{project.version}-${platform}</tagNameFormat>
-                        <arguments>-Dplatform=${platform}</arguments>
+                        <tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
                     </configuration>
                 </plugin>
             </plugins>
@@ -301,28 +299,6 @@
                         <goals>
                             <goal>compile</goal>
                             <goal>add-source</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.6</version>
-                <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                    <skipAssembly>true</skipAssembly>
-                    <appendAssemblyId>false</appendAssemblyId>
-                    <finalName>${project.artifactId}-${project.version}-jar-with-dependencies-${platform}</finalName>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>make-assembly</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
                         </goals>
                     </execution>
                 </executions>
