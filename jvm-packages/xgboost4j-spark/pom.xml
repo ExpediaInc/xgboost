@@ -13,6 +13,26 @@
             <groupId>com.expedia.xgboost4j</groupId>
             <artifactId>xgboost4j-linux</artifactId>
             <version>0.7.1-SNAPSHOT</version>
+        <relativePath>../../</relativePath>
+    </parent>
+    <artifactId>xgboost4j-spark</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <attach>false</attach>
+                    <skipAssembly>false</skipAssembly>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.expedia</groupId>
+            <artifactId>xgboost4j</artifactId>
+            <version>0.11.13-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
